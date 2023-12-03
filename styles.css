@@ -86,16 +86,37 @@ button i {
 
 .section-intro {
   background-image: url(./images/section101mobile.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
 }
 
 .section-intro-right{
   align-items: center;
   justify-items: center;
+  margin-top: 4rem;
+  color: white;
 }
+
+.section-intro-right-text{
+  margin-right: 4rem;
+}
+
+
+.section-product{
+  background-color: #eee9e4;
+}
+/* .section-second{
+  background-image: url(./images/intro102mobile.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+} */
+
 
 
 
@@ -105,11 +126,12 @@ button i {
     content: 'sm';
   }
   .section-intro {
-    background-image: url(./images/section101mobile.jpg);
-    background-size: contain;
+    background-image: url(./images/section101.jpg);
+    background-size: cover;
+    background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: auto;
     width: auto;
   }
 }
@@ -119,13 +141,19 @@ button i {
     content: 'md';
   }
   .section-intro {
-    background-image: url(./images/section101mobile.jpg);
-    background-size: contain;
+    background-image: url(./images/section101.jpg);
+    background-size: cover;
+    background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80vh;
     width: auto;
   }
+
+  .section-intro-right{
+    margin-top: 10rem;
+  }
+  
 }
 
 @media (min-width: 992px) {
@@ -139,9 +167,14 @@ button i {
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 70vh;
     width: auto;
   }
+
+  .section-intro-right{
+    margin-top: 10rem;
+  }
+  
 }
 
 @media (min-width: 1200px) {
@@ -159,9 +192,14 @@ button i {
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80vh;
     width: auto;
   }
+
+  .section-intro-right{
+    margin-top: 12rem;
+  }
+  
 }
 
 @media (min-width: 1400px) {
@@ -174,9 +212,14 @@ button i {
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80vh;
     width: auto;
   }
+
+  .section-intro-right{
+    margin-top: 12rem;
+  }
+  
 }
 
 
