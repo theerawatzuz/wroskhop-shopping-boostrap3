@@ -1,0 +1,39 @@
+$(document).ready(function() {
+//    $('.list-product .over').hover(function() {
+//        $(this).attr('src', 'img/product/03-Product_03.jpg');
+//    }, function() {
+//        $(this).attr('src', '/ico/view.png');
+//    });
+
+$('a.taphover').on('touchstart', function (e) {
+    'use strict'; //satisfy code inspectors
+    var link = $(this); //preselect the link
+    if (link.hasClass('hover')) {
+        return true;
+    } else {
+        $(this).addClass('hover');
+        $('a.taphover').not(this).removeClass('hover');
+        e.preventDefault();
+        return false; //extra, and to make sure the function has consistent return points
+    }
+});
+
+$('.list-news01 li a').on('click touchend', function(e) {
+    var el = $(this);
+    var link = el.attr('href');
+    window.location = link;
+});
+
+$('#switchLang').on('change', function() {
+//    window.location = "?lang="+this.value;
+    $.ajax({
+        url: "controllers/session_write.php",
+        type: 'POST',
+        data: { lang: this.value },
+        success: function(data){
+            window.location.reload();
+        }
+   });   
+});
+                
+});
